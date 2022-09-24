@@ -1,0 +1,246 @@
+
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.raw{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section_info{
+    text-align: center;
+    color: #7e8287;;
+}
+.section_info h2{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.section_info p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+/* common css end */
+
+/* nav stction start  */
+nav{
+    background-color: #02918b;
+}
+nav .raw{
+    align-items: center;
+}
+nav .container .logo{
+    width: 20%;
+}
+nav .container .menu{
+    width: 80%;
+}
+nav .container .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .container .menu ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 26px 25px;
+    transition: 0.5s;
+}
+nav .container .menu ul li a:hover{
+    color: #cfc91d;
+    background-color: black;
+}
+/* nav stction end  */
+
+/* Banner stction start */
+#banner{
+    background-image: url(../img/banner.jpg);
+    height: 728px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #0b1016;
+    opacity: 0.66;
+    z-index: -1;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .raw{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#banner .banner_content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_content h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .banner_content p{
+    font-size: 18px;
+    font-weight: 400;
+}
+#banner .banner_content img{
+    display: block;
+    margin: 50px auto;
+}
+#banner .banner_content a{
+    display: inline-block;
+    color: #0b1016;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 18px 42px;
+    background-color: #cfc91d;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#banner .banner_content a:hover{
+    background-color: #02918b;
+    color: #fff;
+}
+/* Banner stction end */
+
+/* About stction start */
+#about{
+    padding: 96px 0;
+}
+#about .section_info p{
+    width: 875px;
+    margin: auto;
+    padding-top: 28px;
+    line-height: 1.8;
+}
+#about .section_info{
+    margin-bottom: 80px;
+}
+#about .about_iteam{
+    width: 25%;
+    text-align: center;
+    padding: 36px 60px;
+    border-right: 1px solid #d9dbdb;
+}
+#about .about_iteam:last-child{
+    border: none;
+}
+#about .about_iteam h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 28px 0;
+}
+#about .about_iteam p{
+    font-size: 11px;
+    color: #7e8287;
+    line-height: 2;
+}
+#about .about_iteam i{
+    color: #02918c;
+    font-size: 25px;
+}
+/* About stction end */
+/* Service stction start */
+#service{
+    background-image: url(../img/services_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 73px;
+}
+.inner_container{
+    width: 50%;
+}
+#service .section_info{
+    margin-bottom: 56px;
+    text-align: left;
+}
+#service .section_info p{
+    line-height: 2.5;
+    width: 478px;
+}
+#service .service_iteam{
+    width: 50%;
+    padding: 50px 0;
+}
+#service .service_iteam h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 19px 0;
+}
+#service .service_iteam p{
+    font-size: 11px;
+    color: #7e8287;
+    line-height: 2;
+    width: 168px;
+}
+#service .service_iteam i{
+    color: #02918c;
+    font-size: 25px;
+}
+/* Service stction end */
+/* Work stction start */
+#work{
+    padding: 107px 0;
+}
+#work .section_info p{
+    width: 675px;
+    margin: auto;
+    padding-top: 15px;
+    line-height: 2;
+}
+#work .section_info{
+    margin-bottom: 80px;
+}
+#work .work_iteam{
+    background-color: #02918b;
+    width: 100%;
+    height: 200px;
+}
+/* Work stction end */
+/* Contact stction start */
+#contact{
+    padding: 96px 0;
+}
+#contact .section_info p{
+    width: 675px;
+    margin: auto;
+    padding-top: 15px;
+    line-height: 2;
+}
+/* Contact stction end */
